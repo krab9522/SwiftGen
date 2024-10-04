@@ -2,6 +2,42 @@
 
 ---
 
+## Develop
+
+### Breaking Changes
+
+_None_
+
+### New Features
+
+* Added Strings Catalog support.  
+  [Łukasz Lech](https://github.com/leszko11)
+  [#1124](https://github.com/SwiftGen/SwiftGen/pull/1124)
+  [#1065](https://github.com/SwiftGen/SwiftGen/issues/1065)
+
+### Bug Fixes
+
+* Build: Fixed the `rake cli:install` command and with it the Homebrew formula.  
+  [Liquidsoul](https://github.com/liquidsoul)
+  [#1030](https://github.com/SwiftGen/SwiftGen/issues/1030)
+  [#1104](https://github.com/SwiftGen/SwiftGen/issues/1104)
+  [#1105](https://github.com/SwiftGen/SwiftGen/pull/1105)
+* XCAssets: Fix rake output:compile for XCAsserts templates by removing lazy vars.  
+  [Liquidsoul](https://github.com/liquidsoul)
+  [#1022](https://github.com/SwiftGen/SwiftGen/issues/1022)
+  [#1107](https://github.com/SwiftGen/SwiftGen/pull/1107)
+* Templates: added `// swiftlint:enable all` to the bottom of templates to fix [warning](https://github.com/realm/SwiftLint/pull/4731) introduced by SwiftLint [0.51.0](https://github.com/realm/SwiftLint/releases/tag/0.51.0).  
+ [Zev Eisenberg](https://github.com/ZevEisenberg)
+ [#1054](https://github.com/SwiftGen/pull/1054)
+
+### Internal Changes
+
+* Update gems to their latest allowed version using bundle update.  
+  [Liquidsoul](https://github.com/liquidsoul)
+  [#1036](https://github.com/SwiftGen/SwiftGen/issues/1036)
+  [#1052](https://github.com/SwiftGen/SwiftGen/issues/1052)
+  [#1108](https://github.com/SwiftGen/SwiftGen/issues/1108)
+
 ## 6.6.3
 
 ### Breaking Changes
@@ -17,11 +53,7 @@ _None_
 
 ### Bug Fixes
 
-* Build: Fixed the `rake cli:install` command and with it the Homebrew formula.  
-  [Liquidsoul](https://github.com/liquidsoul)
-  [#1030](https://github.com/SwiftGen/SwiftGen/issues/1030)
-  [#1104](https://github.com/SwiftGen/SwiftGen/issues/1104)
-  [#1105](https://github.com/SwiftGen/SwiftGen/pull/1105)
+_None_
 
 ### Internal Changes
 

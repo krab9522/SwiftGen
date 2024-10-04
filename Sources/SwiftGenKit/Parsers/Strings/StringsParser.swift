@@ -67,7 +67,8 @@ public enum Strings {
     /// This list must be ordered by priority, higher priority first
     private static let subParsers: [StringsFileTypeParser.Type] = [
       StringsDictFileParser.self,
-      StringsFileParser.self
+      StringsFileParser.self,
+      StringsCatalogFileParser.self
     ]
 
     public init(options: [String: Any] = [:], warningHandler: Parser.MessageHandler? = nil) throws {
@@ -77,7 +78,7 @@ public enum Strings {
 
     public static let allOptions: ParserOptionList = [Option.separator]
     public static var defaultFilter: String {
-      let extensions = Parser.subParsers.flatMap { $0.extensions }.sorted()
+      let extensions = Self.subParsers.flatMap { $0.extensions }.sorted()
       return filterRegex(forExtensions: extensions)
     }
 
